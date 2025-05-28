@@ -1,0 +1,43 @@
+Questão 7:
+
+        Considere os algoritmos abaixo e responda:
+
+        Alg1:
+
+        int count = 0;
+        int i;
+        for (i=0; i<n; i++)
+            if (i%2 == 1)
+            count++;
+
+        Alg2:
+
+        for (int i=1;i<=n;i*=2)
+            if (i%2 == 0)
+                printf(“Olá”);
+
+        Alg1: Valor final da variável count considerando n = 7: 3
+        RES:
+            primeiroLoop: i = 1, count = 1
+            segundoLoop: i = 2, count = 1
+            terceiroLoop: i = 3, count = 2
+            quartoLoop: i = 4, count = 2
+            quintoLoop: i = 5, count = 3
+            sextoLoop: i = 6, count = 3
+
+        Alg2: Quantidade de vezes que o numero olá será impresso considerando n = 15
+
+        1.Para cada um dos codigos:
+        a) Declaração de Variáveis:
+        1: 3
+        2: 2
+        b) Atribuições:
+        1: 3 (se n = 7)
+        2: 2 (se n = 15)
+
+        2.Calcule o num de operações em função de n para cada um dos alg:
+
+        a) Comparação "menor que": Alg1: n, Alg2: n+1
+        b) Comparação "igual a"(==): Alg1: n, Alg2: n
+        c) Incremento no melhor caso: Alg1: 0 Alg2: 0
+        d) Incremento no pior caso: Alg1: n, Alg2: n.
